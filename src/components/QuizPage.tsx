@@ -166,21 +166,7 @@ const QuizPage: React.FC = () => {
               </Link>
             </div>
 
-            <div className="border-t border-white/10 pt-12">
-              <h3 className="text-xl font-bold mb-8">اختبارات أخرى قد تهمك:</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {Object.values(ALL_TESTS).filter(t => t.id !== testId).map(otherTest => (
-                  <Link 
-                    key={otherTest.id}
-                    to={`/quiz/${otherTest.id}`}
-                    className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all text-right group"
-                  >
-                    <h4 className="font-bold group-hover:text-purple-400 transition-colors">{otherTest.title}</h4>
-                    <p className="text-xs text-gray-500 mt-2">اختبر نفسك الآن ←</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
+
           </div>
         )}
       </main>

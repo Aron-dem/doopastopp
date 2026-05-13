@@ -25,7 +25,7 @@ import { QUESTIONS, RESULT_LEVELS } from './questions';
 export const ALL_TESTS: Record<string, TestData> = {
   'brain-rot': {
     id: 'brain-rot',
-    title: 'اختبار تعفن الدماغ (Brain Rot Test)',
+    title: 'اختبار تعفن الدماغ (Test Your Brain Rot)',
     intro: 'الاختبار الشامل لقياس مدى تأثير العالم الرقمي على صحتك العقلية وتركيزك.',
     questions: QUESTIONS.map(q => ({
       id: q.id,
@@ -43,7 +43,7 @@ export const ALL_TESTS: Record<string, TestData> = {
       max: r.max,
       title: r.title.ar,
       desc: r.desc.ar,
-      recommendations: [] // Recommendations are usually handled in results component or can be added here
+      recommendations: []
     }))
   }
 };

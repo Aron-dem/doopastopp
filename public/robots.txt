@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /quiz/result
+Disallow: /admin
+
+Sitemap: https://dopastopp.com/sitemap.xml
+
+# Google AdSense Crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /

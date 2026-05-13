@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ALL_TESTS, TestData, TestResult } from '../data/allTests';
 import Header from './Header';
-import Footer from './Footer';
 
 const QuizPage: React.FC = () => {
   const { testId } = useParams<{ testId: string }>();
@@ -185,8 +184,6 @@ const QuizPage: React.FC = () => {
           </div>
         )}
       </main>
-
-      <Footer />
     </div>
   );
 };

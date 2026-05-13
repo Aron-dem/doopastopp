@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Header from './Header';
-import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -97,8 +96,6 @@ const RecoveryPlanPage: React.FC = () => {
           </Link>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };

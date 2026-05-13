@@ -20,54 +20,30 @@ export interface TestData {
   results: TestResult[];
 }
 
+import { QUESTIONS, RESULT_LEVELS } from './questions';
+
 export const ALL_TESTS: Record<string, TestData> = {
   'brain-rot': {
     id: 'brain-rot',
     title: 'اختبار تعفن الدماغ (Brain Rot Test)',
-    intro: 'هل تشعر أن انتباهك يتلاشى؟ اكتشف مدى تأثير المحتوى الرقمي السريع على قدراتك الذهنية.',
-    questions: [
-      {
-        id: 1,
-        text: 'كم مرة تجد نفسك تستخدم مصطلحات الإنترنت في حياتك الواقعية؟',
-        options: [
-          { text: 'نادراً أو أبداً', score: 0 },
-          { text: 'أحياناً', score: 2 },
-          { text: 'كثيراً جداً', score: 5 }
-        ]
-      },
-      {
-        id: 2,
-        text: 'هل تجد صعوبة في مشاهدة فيديو أطول من 3 دقائق دون تسريعه؟',
-        options: [
-          { text: 'لا، أستمتع بالمحتوى الطويل', score: 0 },
-          { text: 'أحياناً أشعر بالملل', score: 3 },
-          { text: 'نعم، لا أستطيع التركيز أبداً', score: 5 }
-        ]
-      },
-      {
-        id: 3,
-        text: 'ما هو أول شيء تفعله عند الاستيقاظ؟',
-        options: [
-          { text: 'شرب الماء أو التأمل', score: 0 },
-          { text: 'تفقد الرسائل المهمة', score: 2 },
-          { text: 'فتح تيك توك أو ريلز فوراً', score: 5 }
-        ]
-      }
-    ],
-    results: [
-      {
-        min: 0, max: 5,
-        title: 'دماغ نقي ✨',
-        desc: 'أنت في مأمن من تعفن الدماغ. حافظ على وعيك الرقمي.',
-        recommendations: ['استمر في القراءة العميقة', 'قلل من استهلاك الفيديوهات القصيرة']
-      },
-      {
-        min: 6, max: 15,
-        title: 'بداية تعفن 🍄',
-        desc: 'دماغك بدأ يتأثر بالمحتوى السريع. حان الوقت لأخذ استراحة.',
-        recommendations: ['قم بإلغاء متابعة الحسابات غير المفيدة', 'مارس هواية يدوية']
-      }
-    ]
-  },
-
+    intro: 'الاختبار الشامل لقياس مدى تأثير العالم الرقمي على صحتك العقلية وتركيزك.',
+    questions: QUESTIONS.map(q => ({
+      id: q.id,
+      text: q.text.ar,
+      options: [
+        { text: 'أبداً', score: 0 },
+        { text: 'نادراً', score: 1 },
+        { text: 'أحياناً', score: 2 },
+        { text: 'غالبًا', score: 3 },
+        { text: 'دائمًا', score: 4 }
+      ]
+    })),
+    results: RESULT_LEVELS.map(r => ({
+      min: r.min,
+      max: r.max,
+      title: r.title.ar,
+      desc: r.desc.ar,
+      recommendations: [] // Recommendations are usually handled in results component or can be added here
+    }))
+  }
 };

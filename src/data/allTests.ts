@@ -26,7 +26,7 @@ export const ALL_TESTS: Record<string, TestData> = {
   'brain-rot': {
     id: 'brain-rot',
     title: 'اختبار تعفن الدماغ (Test Your Brain Rot)',
-    intro: 'الاختبار الشامل لقياس مدى تأثير العالم الرقمي على صحتك العقلية وتركيزك.',
+    intro: 'الاختبار الشامل المعتمد لقياس مدى تأثير العالم الرقمي على صحتك العقلية وتركيزك. أجب بصدق للحصول على أدق نتيجة.',
     questions: QUESTIONS.map(q => ({
       id: q.id,
       text: q.text.ar,
@@ -43,7 +43,11 @@ export const ALL_TESTS: Record<string, TestData> = {
       max: r.max,
       title: r.title.ar,
       desc: r.desc.ar,
-      recommendations: []
+      recommendations: [
+        'ابدأ بخطة التعافي الرقمي المقترحة',
+        'قلل من استخدام الهاتف قبل النوم بساعة',
+        'مارس أنشطة بدنية بعيداً عن الشاشات'
+      ]
     }))
   }
 };

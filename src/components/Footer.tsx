@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer: React.FC = () => {
+  const { lang, t } = useLanguage();
+
   return (
-    <footer className="bg-black/80 border-t border-white/10 pt-12 pb-8 px-4 md:px-8 mt-20">
+    <footer className="bg-black/80 border-t border-white/10 pt-12 pb-8 px-4 md:px-8 mt-20" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Brand Section */}
         <div className="col-span-1 md:col-span-1">
@@ -12,7 +15,7 @@ const Footer: React.FC = () => {
             <span className="text-white font-black text-xl">DopaStopp</span>
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed">
-            منصة تعليمية وترفيهية حديثة تركز على استعادة التركيز والتعافي من إدمان العالم الرقمي.
+            {t("منصة تعليمية وترفيهية حديثة تركز على استعادة التركيز والتعافي من إدمان العالم الرقمي.", "A modern educational and entertainment platform focused on reclaiming focus and recovering from digital addiction.")}
           </p>
           <div className="flex gap-4 mt-6">
             <a href="#" className="text-gray-400 hover:text-white transition-colors" title="Twitter">
@@ -26,38 +29,38 @@ const Footer: React.FC = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-white font-bold mb-6">روابط سريعة</h4>
+          <h4 className="text-white font-bold mb-6">{t("روابط سريعة", "Quick Links")}</h4>
           <ul className="space-y-4">
-            <li><Link to="/about" className="text-gray-400 hover:text-cyan-400 transition-colors">عن المنصة</Link></li>
-            <li><Link to="/blog" className="text-gray-400 hover:text-cyan-400 transition-colors">المدونة</Link></li>
-            <li><Link to="/faq" className="text-gray-400 hover:text-cyan-400 transition-colors">الأسئلة الشائعة</Link></li>
-            <li><Link to="/contact" className="text-gray-400 hover:text-cyan-400 transition-colors">اتصل بنا</Link></li>
+            <li><Link to="/about" className="text-gray-400 hover:text-purple-400 transition-colors">{t("عن المنصة", "About")}</Link></li>
+            <li><Link to="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">{t("المدونة", "Blog")}</Link></li>
+            <li><Link to="/faq" className="text-gray-400 hover:text-purple-400 transition-colors">{t("الأسئلة الشائعة", "FAQ")}</Link></li>
+            <li><Link to="/contact" className="text-gray-400 hover:text-purple-400 transition-colors">{t("اتصل بنا", "Contact Us")}</Link></li>
           </ul>
         </div>
 
         {/* Tools */}
         <div>
-          <h4 className="text-white font-bold mb-6">الأدوات والاختبارات</h4>
+          <h4 className="text-white font-bold mb-6">{t("الأدوات والاختبارات", "Tools & Tests")}</h4>
           <ul className="space-y-4">
-            <li><Link to="/quiz/brain-rot" className="text-gray-400 hover:text-cyan-400 transition-colors">اختبار تعفن الدماغ</Link></li>
-            <li><Link to="/quiz/phone-addiction" className="text-gray-400 hover:text-cyan-400 transition-colors">إدمان الهاتف</Link></li>
-            <li><Link to="/quiz/brain-age" className="text-gray-400 hover:text-cyan-400 transition-colors">عمر الدماغ</Link></li>
-            <li><Link to="/quiz/attention-span" className="text-gray-400 hover:text-cyan-400 transition-colors">مدى الانتباه</Link></li>
+            <li><Link to="/quiz/brain-rot" className="text-gray-400 hover:text-purple-400 transition-colors">{t("اختبار تعفن الدماغ", "Brain Rot Test")}</Link></li>
+            <li><Link to="/quiz/phone-addiction" className="text-gray-400 hover:text-purple-400 transition-colors">{t("إدمان الهاتف", "Phone Addiction")}</Link></li>
+            <li><Link to="/quiz/brain-age" className="text-gray-400 hover:text-purple-400 transition-colors">{t("عمر الدماغ", "Brain Age")}</Link></li>
+            <li><Link to="/quiz/attention-span" className="text-gray-400 hover:text-purple-400 transition-colors">{t("مدى الانتباه", "Attention Span")}</Link></li>
           </ul>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h4 className="text-white font-bold mb-6">النشرة البريدية</h4>
-          <p className="text-gray-400 text-sm mb-4">اشترك للحصول على نصائح أسبوعية لتحسين تركيزك.</p>
+          <h4 className="text-white font-bold mb-6">{t("النشرة البريدية", "Newsletter")}</h4>
+          <p className="text-gray-400 text-sm mb-4">{t("اشترك للحصول على نصائح أسبوعية لتحسين تركيزك.", "Subscribe for weekly tips to improve your focus.")}</p>
           <form className="flex flex-col gap-2" onSubmit={(e) => e.preventDefault()}>
             <input 
               type="email" 
-              placeholder="بريدك الإلكتروني" 
-              className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-500 transition-colors"
+              placeholder={t("بريدك الإلكتروني", "Your Email")} 
+              className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500 transition-colors"
             />
-            <button className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
-              اشترك الآن
+            <button className="bg-purple-600 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+              {t("اشترك الآن", "Subscribe Now")}
             </button>
           </form>
         </div>
@@ -65,11 +68,11 @@ const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
         <div className="flex flex-wrap justify-center gap-6">
-          <Link to="/privacy-policy" className="hover:text-white transition-colors">سياسة الخصوصية</Link>
-          <Link to="/terms" className="hover:text-white transition-colors">الشروط والأحكام</Link>
-          <Link to="/disclaimer" className="hover:text-white transition-colors">إخلاء المسؤولية</Link>
+          <Link to="/privacy-policy" className="hover:text-white transition-colors">{t("سياسة الخصوصية", "Privacy Policy")}</Link>
+          <Link to="/terms" className="hover:text-white transition-colors">{t("الشروط والأحكام", "Terms & Conditions")}</Link>
+          <Link to="/disclaimer" className="hover:text-white transition-colors">{t("إخلاء المسؤولية", "Disclaimer")}</Link>
         </div>
-        <p>© {new Date().getFullYear()} DopaStopp. جميع الحقوق محفوظة.</p>
+        <p>© {new Date().getFullYear()} DopaStopp. {t("جميع الحقوق محفوظة.", "All rights reserved.")}</p>
       </div>
     </footer>
   );

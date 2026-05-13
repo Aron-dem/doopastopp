@@ -12,6 +12,122 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: '1',
+    slug: 'brain-rot-oxford-word-of-the-year-2024',
+    title: {
+      ar: 'تعفن الدماغ (Brain Rot): كلمة العام 2024 من أكسفورد — ما هو وكيف تعالجه؟',
+      en: 'Brain Rot: Oxford Word of the Year 2024 — What is it and how to fix it?'
+    },
+    summary: {
+      ar: 'اكتشف لماذا تم اختيار "Brain Rot" ككلمة العام، وما هي أعراضها، وكيف يمكنك حماية عقلك من تأثيرات تيك توك والسوشيال ميديا.',
+      en: 'Discover why "Brain Rot" was chosen as the word of the year, its symptoms, and how to protect your mind from the effects of TikTok and social media.'
+    },
+    date: '2024-12-10',
+    author: 'Dopastopp Team',
+    image: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2070&auto=format&fit=crop',
+    content: {
+      ar: `
+# تعفن الدماغ (Brain Rot): كلمة العام 2024 من أكسفورد
+
+في خطوة مفاجئة ولكنها تعكس واقعنا الرقمي، أعلنت **قواميس أكسفورد** أن مصطلح **"Brain Rot"** (تعفن الدماغ) هو "كلمة العام لعام 2024". هذا المصطلح ليس مجرد "ميم" (Meme) عابر، بل هو توصيف دقيق لحالة ذهنية يعاني منها الملايين بسبب الاستهلاك المفرط للمحتوى التافه.
+
+## ما هو "تعفن الدماغ"؟
+
+يُعرف تعفن الدماغ بأنه التدهور المفترض للحالة الذهنية أو الفكرية للشخص، والذي يُعزى غالباً إلى الاستهلاك المفرط للمحتوى الرقمي الذي يُعتبر منخفض الجودة أو غير هام، وخاصة الفيديوهات القصيرة والمحتوى المولد بالذكاء الاصطناعي.
+
+### تأثيره الصحي الخطير
+أظهرت دراسات حديثة أن الإفراط في استهلاك المحتوى القصير (TikTok, Reels, Shorts) يؤدي إلى:
+- **انخفاض في مدة التركيز**: من 12 ثانية في عام 2000 إلى 8 ثوانٍ فقط اليوم.
+- **ضعف الذاكرة قصيرة المدى**.
+- **زيادة القلق والاكتئاب**.
+
+---
+
+## أعراض "تعفن الدماغ" — هل أنت مصاب؟
+
+إذا لاحظت 3 من هذه الأعراض، فأنت على الأرجح تعاني من درجة من درجات تعفن الدماغ:
+1. **عدم القدرة على التركيز**: لا تستطيع قراءة كتاب لأكثر من 5 دقائق.
+2. **الرغبة المستمرة في التمرير**: لا تتوقف عن الـ Scroll حتى بعد ساعات.
+3. **استخدام مصطلحات غريبة**: تقول "rizz" و "sigma" دون وعي.
+
+---
+
+## علاج تعفن الدماغ: كيفية استعادة دماغك
+
+### ✅ 1. الصيام الرقمي (Digital Detox)
+أسبوع بدون تيك توك، وحد يومي 30 دقيقة لكل منصات السوشيال ميديا.
+
+### ✅ 2. العودة للقراءة العميقة
+ابدأ بقراءة 10 صفحات يومياً من كتاب ورقي. هذا يعيد تدريب الدماغ على **التركيز العميق** (Deep Focus).
+      `,
+      en: `
+# Brain Rot: Oxford Word of the Year 2024
+
+In a surprising move that reflects our digital reality, **Oxford Languages** announced that the term **"Brain Rot"** is the "Word of the Year for 2024".
+
+## What is "Brain Rot"?
+Brain rot is defined as the supposed deterioration of a person's mental or intellectual state, often attributed to the excessive consumption of digital content considered low-quality or unimportant.
+
+### Serious Health Impact
+- **Decreased Attention Span**: From 12 seconds in 2000 to just 8 seconds today.
+- **Weakened Short-term Memory**.
+- **Increased Anxiety and Depression**.
+
+---
+
+## Treating Brain Rot: How to Reclaim Your Brain
+1. **Digital Detox**: A week without TikTok.
+2. **Return to Deep Reading**: Start by reading 10 pages a day of a physical book.
+      `
+    }
+  },
+  {
+    id: '2',
+    slug: 'digital-detox-guide-2025',
+    title: {
+      ar: 'دليل الديتوكس الرقمي 2025: كيف تستعيد تركيزك في 7 أيام؟',
+      en: 'Digital Detox Guide 2025: How to Regain Your Focus in 7 Days?'
+    },
+    summary: {
+      ar: 'خطة عملية ومجربة للتخلص من إدمان الشاشات واستعادة صفاء ذهنك بعيداً عن ضجيج الإشعارات.',
+      en: 'A practical and proven plan to break screen addiction and reclaim your mental clarity away from notification noise.'
+    },
+    date: '2025-01-15',
+    author: 'Dopastopp Team',
+    image: 'https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?q=80&w=2070&auto=format&fit=crop',
+    content: {
+      ar: `
+# دليل الديتوكس الرقمي 2025: استعد عقلك
+
+هل تشعر أن هاتفك يملكك بدلاً من أن تملكه؟ إليك الدليل الشامل للديتوكس الرقمي.
+
+## خطة الـ 7 أيام للتحول الرقمي
+
+### اليوم 1-2: تنظيف البيئة الرقمية
+- احذف التطبيقات التي لا تستخدمها.
+- أوقف كافة الإشعارات غير الضرورية.
+
+### اليوم 3-4: وضع الحدود
+- لا هاتف في غرفة النوم.
+- لا هاتف على طاولة الطعام.
+
+### اليوم 5-7: إعادة الاتصال بالواقع
+- اخرج للمشي بدون سماعات.
+- اقرأ كتاباً ورقياً لمدة ساعة.
+      `,
+      en: `
+# Digital Detox Guide 2025: Reclaim Your Mind
+
+Do you feel like your phone owns you instead of the other way around?
+
+## The 7-Day Digital Transformation Plan
+1. **Cleanup**: Delete unused apps and turn off notifications.
+2. **Boundaries**: No phone in the bedroom or at the dining table.
+3. **Reconnect**: Walk without headphones and read physical books.
+      `
+    }
+  },
+  {
+    id: '3',
     slug: 'what-is-dopamine-overload',
     title: {
       ar: 'ما هو حمل الدوبامين الزائد؟ وكيف يؤثر على حياتك؟',
@@ -28,39 +144,33 @@ export const BLOG_POSTS: BlogPost[] = [
       ar: `
 # ما هو حمل الدوبامين الزائد؟ وكيف يؤثر على حياتك؟
 
-الدوبامين هو ناقل عصبي في الدماغ يرتبط بالمتعة والمكافأة. في العصر الطبيعي، كان الدوبامين يُفرز عند تحقيق إنجازات حقيقية، مثل العثور على طعام أو حل مشكلة.
+الدوبامين هو ناقل عصبي في الدماغ يرتبط بالمتعة والمكافأة.
 
 ## المشكلة في العصر الرقمي
 اليوم، نحن نعيش في عالم مصمم لاستنزاف الدوبامين لدينا. الإشعارات، "اللايكات"، والفيديوهات القصيرة تعطينا جرعات صغيرة وسريعة من الدوبامين دون أي جهد حقيقي.
 
 ### أعراض حمل الدوبامين الزائد:
-1. **فقدان الاستمتاع بالأنشطة البسيطة:** مثل القراءة أو المشي.
-2. **التشتت المستمر:** صعوبة في التركيز على مهمة واحدة لأكثر من دقائق.
-3. **الخمول والكسل:** الشعور بالإرهاق رغم عدم القيام بمجهود بدني.
-
-### كيف تعالج ذلك؟
-الحل يكمن في ما يسمى بـ "صيام الدوبامين" أو تقليل المثيرات الاصطناعية للسماح لمستقبلات الدوبامين في دماغك بالعودة إلى مستوياتها الطبيعية.
+1. **فقدان الاستمتاع بالأنشطة البسيطة.**
+2. **التشتت المستمر.**
+3. **الخمول والكسل.**
       `,
       en: `
 # What is Dopamine Overload? And How Does It Affect Your Life?
 
-Dopamine is a neurotransmitter in the brain associated with pleasure and reward. In the natural era, dopamine was released upon achieving real accomplishments, such as finding food or solving a problem.
+Dopamine is a neurotransmitter in the brain associated with pleasure and reward.
 
 ## The Problem in the Digital Age
-Today, we live in a world designed to drain our dopamine. Notifications, "likes," and short videos give us small, quick hits of dopamine without any real effort.
+Notifications, "likes," and short videos give us small, quick hits of dopamine without any real effort.
 
-### Symptoms of Dopamine Overload:
-1. **Loss of enjoyment in simple activities:** such as reading or walking.
-2. **Constant distraction:** difficulty focusing on a single task for more than a few minutes.
-3. **Lethargy and laziness:** feeling exhausted despite no physical effort.
-
-### How to treat it?
-The solution lies in what is called "Dopamine Fasting" or reducing artificial stimuli to allow the dopamine receptors in your brain to return to their natural levels.
+### Symptoms:
+1. **Loss of enjoyment in simple activities.**
+2. **Constant distraction.**
+3. **Lethargy and laziness.**
       `
     }
   },
   {
-    id: '2',
+    id: '4',
     slug: 'signs-of-phone-addiction',
     title: {
       ar: '7 علامات تدل على أنك مدمن لهاتفك الذكي',
@@ -77,134 +187,24 @@ The solution lies in what is called "Dopamine Fasting" or reducing artificial st
       ar: `
 # 7 علامات تدل على أنك مدمن لهاتفك الذكي
 
-إدمان الهاتف ليس مجرد قضاء وقت طويل عليه، بل هو حالة نفسية تؤثر على جودة حياتك وعلاقاتك.
-
-## العلامات التحذيرية:
-1. **تفقد الهاتف فور الاستيقاظ:** قبل حتى أن تغسل وجهك.
-2. **القلق عند انخفاض البطارية:** شعور بالتوتر غير المبرر.
-3. **استخدام الهاتف في الحمام:** عدم القدرة على البقاء وحيداً مع أفكارك لدقائق.
-4. **إهمال المسؤوليات:** تأجيل العمل أو الدراسة من أجل التصفح.
-5. **متلازمة الاهتزاز الوهمي:** الشعور بأن هاتفك يهتز وهو ليس كذلك.
-6. **فشل محاولات التقليل:** وعد نفسك بـ 5 دقائق وينتهي الأمر بساعتين.
-7. **تدهور العلاقات الاجتماعية:** تفضيل الهاتف على الجلوس مع العائلة والأصدقاء.
-
-إذا كنت تعاني من أكثر من 4 علامات، فقد حان الوقت لإعادة تقييم علاقتك بجهازك.
+1. تفقد الهاتف فور الاستيقاظ.
+2. القلق عند انخفاض البطارية.
+3. استخدام الهاتف في الحمام.
+4. إهمال المسؤوليات.
+5. متلازمة الاهتزاز الوهمي.
+6. فشل محاولات التقليل.
+7. تدهور العلاقات الاجتماعية.
       `,
       en: `
 # 7 Signs You Are Addicted to Your Smartphone
 
-Phone addiction is not just about spending a long time on it; it's a psychological state that affects the quality of your life and relationships.
-
-## Warning Signs:
-1. **Checking the phone immediately upon waking up:** even before washing your face.
-2. **Anxiety when the battery is low:** a feeling of unjustified tension.
-3. **Using the phone in the bathroom:** inability to be alone with your thoughts for minutes.
-4. **Neglecting responsibilities:** postponing work or study for browsing.
-5. **Phantom vibration syndrome:** feeling your phone vibrate when it isn't.
-6. **Failed attempts to reduce usage:** promising yourself 5 minutes and ending up with two hours.
-7. **Deterioration of social relationships:** preferring the phone over sitting with family and friends.
-
-If you suffer from more than 4 signs, it's time to re-evaluate your relationship with your device.
-      `
-    }
-  },
-  {
-    id: '3',
-    slug: 'improve-focus-naturally',
-    title: {
-      ar: 'كيف تحسن تركيزك بشكل طبيعي وبدون أدوية',
-      en: 'How to Improve Your Focus Naturally Without Medication'
-    },
-    summary: {
-      ar: 'طرق عملية ومثبتة علمياً لاستعادة "عضلة التركيز" في عالم مليء بالمشتتات.',
-      en: 'Practical and scientifically proven ways to reclaim your "focus muscle" in a world full of distractions.'
-    },
-    date: '2026-05-14',
-    author: 'DopaStopp Team',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
-    content: {
-      ar: `
-# كيف تحسن تركيزك بشكل طبيعي وبدون أدوية
-
-التركيز ليس موهبة تولد بها، بل هو عضلة يمكن تدريبها وتقويتها.
-
-## استراتيجيات تحسين التركيز:
-### 1. تقنية البومودورو (Pomodoro)
-العمل لمدة 25 دقيقة ثم أخذ استراحة لـ 5 دقائق. هذا يساعد الدماغ على البقاء منتعشاً.
-
-### 2. العمل العميق (Deep Work)
-خصص وقتًا في يومك (ساعة أو ساعتين) يكون فيه الهاتف في غرفة أخرى والإنترنت مقطوعاً إذا أمكن.
-
-### 3. التأمل واليقظة الذهنية
-التأمل لـ 10 دقائق يومياً يغير حرفياً بنية الدماغ المرتبطة بالانتباه.
-
-### 4. النوم الكافي
-الدماغ المتعب لا يمكنه التركيز. تأكد من الحصول على 7-8 ساعات من النوم العميق.
-      `,
-      en: `
-# How to Improve Your Focus Naturally Without Medication
-
-Focus is not a talent you are born with; it is a muscle that can be trained and strengthened.
-
-## Strategies to Improve Focus:
-### 1. Pomodoro Technique
-Working for 25 minutes then taking a 5-minute break. This helps the brain stay refreshed.
-
-### 2. Deep Work
-Dedicate time in your day (an hour or two) where the phone is in another room and the internet is disconnected if possible.
-
-### 3. Meditation and Mindfulness
-Meditating for 10 minutes a day literally changes the brain structure associated with attention.
-
-### 4. Adequate Sleep
-A tired brain cannot focus. Make sure to get 7-8 hours of deep sleep.
-      `
-    }
-  },
-  {
-    id: '4',
-    slug: 'social-media-brain-effects',
-    title: {
-      ar: 'كيف تؤثر وسائل التواصل الاجتماعي على دماغك؟',
-      en: 'How Does Social Media Affect Your Brain?'
-    },
-    summary: {
-      ar: 'تحليل علمي لما يحدث خلف الكواليس في جهازك العصبي عند استخدام تطبيقات التواصل.',
-      en: 'A scientific analysis of what happens behind the scenes in your nervous system when using social apps.'
-    },
-    date: '2026-05-15',
-    author: 'DopaStopp Team',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
-    content: {
-      ar: `
-# كيف تؤثر وسائل التواصل الاجتماعي على دماغك؟
-
-وسائل التواصل الاجتماعي ليست مجرد أدوات للتواصل؛ إنها مختبرات نفسية مصممة للتلاعب بكيميائية الدماغ.
-
-## آليات التأثير:
-### 1. حلقة المكافأة الدوبامينية
-كل "لايك" أو تعليق يحفز إفراز الدوبامين، مما يخلق حلقة إدمانية تجعلك تعود للمزيد.
-
-### 2. تآكل المادة الرمادية
-تشير بعض الدراسات إلى أن الاستخدام المفرط قد يرتبط بتقليل كثافة المادة الرمادية في مناطق الدماغ المسؤولة عن التحكم في الانفعالات.
-
-### 3. المقارنة الاجتماعية والقلق
-رؤية حياة الآخرين "المثالية" تؤدي إلى إفراز الكورتيزول (هرمون التوتر)، مما يزيد من القلق وتدني احترام الذات.
-      `,
-      en: `
-# How Does Social Media Affect Your Brain?
-
-Social media are not just communication tools; they are psychological laboratories designed to manipulate brain chemistry.
-
-## Mechanisms of Influence:
-### 1. Dopamine Reward Loop
-Every "like" or comment triggers dopamine release, creating an addictive loop that keeps you coming back for more.
-
-### 2. Gray Matter Erosion
-Some studies suggest that excessive use may be linked to reduced gray matter density in brain regions responsible for impulse control.
-
-### 3. Social Comparison and Anxiety
-Seeing others' "perfect" lives leads to cortisol (stress hormone) release, increasing anxiety and lowering self-esteem.
+1. Checking the phone immediately upon waking up.
+2. Anxiety when the battery is low.
+3. Using the phone in the bathroom.
+4. Neglecting responsibilities.
+5. Phantom vibration syndrome.
+6. Failed attempts to reduce usage.
+7. Deterioration of social relationships.
       `
     }
   }

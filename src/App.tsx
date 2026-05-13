@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import HeroSection from './components/HeroSection';
 import QuizSection from './components/QuizSection';
@@ -81,13 +81,8 @@ function AppContent() {
           <IntroScreen onComplete={handleIntroComplete} />
         ) : (
           <Routes>
-            <Route path="/" element={<HeroSection onStartQuiz={() => navigate('/quiz')} />} />
-            <Route path="/quiz" element={
-              <QuizSection
-                onComplete={handleQuizComplete}
-                onBack={() => navigate('/')}
-              />
-            } />
+<Route path="/" element={<HeroSection onStartQuiz={() => navigate('/quiz/brain-rot')} />} />
+	            <Route path="/quiz" element={<Navigate to="/quiz/brain-rot" replace />} />
             <Route path="/quiz/:testId" element={<QuizPage />} />
             <Route path="/results" element={
               quizResult ? (
@@ -96,11 +91,11 @@ function AppContent() {
                   answers={quizResult.answers}
                   result={quizResult.result}
                   brainRotPcnt={quizResult.brainRotPcnt}
-                  onRetake={() => navigate('/quiz')}
+                  onRetake={() => navigate('/quiz/brain-rot')}
                   onStartChallenge={() => navigate('/challenge')}
                 />
               ) : (
-                <HeroSection onStartQuiz={() => navigate('/quiz')} />
+                <HeroSection onStartQuiz={() => navigate('/quiz/brain-rot')} />
               )
             } />
             <Route path="/challenge" element={
@@ -112,7 +107,7 @@ function AppContent() {
             <Route path="/level" element={
               <>
                 <LevelProgressScreen
-                  onStartTest={() => navigate('/quiz')}
+                  onStartTest={() => navigate('/quiz/brain-rot')}
                   onStartPlan={() => navigate('/plan')}
                   onBack={() => navigate('/')}
                 />

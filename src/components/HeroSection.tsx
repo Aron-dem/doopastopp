@@ -156,7 +156,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onStartQuiz }) => {
             }}
           >
             <span className="relative z-10 flex items-center gap-2">
-              🧠 {t('ابدأ التقييم الشامل', 'Start Full Assessment')}
+              🧠 {t('اختبر تعفن دماغك', 'Test Your Brain Rot')}
             </span>
           </button>
           
@@ -173,39 +173,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onStartQuiz }) => {
           <h2 className="text-2xl md:text-3xl font-black text-white mb-8 text-center">
             {t('أدوات واختبارات متخصصة', 'Specialized Tools & Tests')}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Link to="/quiz/brain-rot" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 hover:border-purple-500/50 transition-all text-right group relative overflow-hidden">
-              <div className="text-3xl mb-4">🍄</div>
-              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-purple-400">{t("اختبار تعفن الدماغ", "Brain Rot Test")}</h3>
-              <p className="text-xs text-gray-400">{t("قس مدى تأثير المحتوى السريع على عقلك.", "Measure the impact of fast content on your brain.")}</p>
+          <div className="grid grid-cols-1 max-w-md mx-auto">
+            <Link to="/quiz/brain-rot" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 hover:border-purple-500/50 transition-all text-right group relative overflow-hidden">
+              <div className="text-4xl mb-4">🍄</div>
+              <h3 className="font-bold text-xl text-white mb-2 group-hover:text-purple-400">{t("اختبار تعفن الدماغ", "Brain Rot Test")}</h3>
+              <p className="text-sm text-gray-400">{t("قس مدى تأثير المحتوى السريع على عقلك واستعد تركيزك الآن.", "Measure the impact of fast content on your brain and reclaim your focus now.")}</p>
+              <div className="mt-4 text-purple-400 font-bold flex items-center gap-2">
+                {t("ابدأ الآن", "Start Now")} ←
+              </div>
             </Link>
-            
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl opacity-70 text-right relative group">
-              <div className="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">
-                {t("قريباً", "Soon")}
-              </div>
-              <div className="text-3xl mb-4">📱</div>
-              <h3 className="font-bold text-lg text-white mb-2">{t("إدمان الهاتف", "Phone Addiction")}</h3>
-              <p className="text-xs text-gray-400">{t("هل تسيطر على هاتفك أم يسيطر عليك؟", "Do you control your phone or does it control you?")}</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl opacity-70 text-right relative group">
-              <div className="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">
-                {t("قريباً", "Soon")}
-              </div>
-              <div className="text-3xl mb-4">🎯</div>
-              <h3 className="font-bold text-lg text-white mb-2">{t("مدى الانتباه", "Attention Span")}</h3>
-              <p className="text-xs text-gray-400">{t("اختبر قدرتك على التركيز العميق.", "Test your ability to focus deeply.")}</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl opacity-70 text-right relative group">
-              <div className="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">
-                {t("قريباً", "Soon")}
-              </div>
-              <div className="text-3xl mb-4">🔋</div>
-              <h3 className="font-bold text-lg text-white mb-2">{t("عمر الدماغ", "Brain Age")}</h3>
-              <p className="text-xs text-gray-400">{t("اكتشف العمر الحقيقي لقدراتك الذهنية.", "Discover the true age of your mental abilities.")}</p>
-            </div>
           </div>
         </div>
 

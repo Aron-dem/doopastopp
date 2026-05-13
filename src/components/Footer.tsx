@@ -43,9 +43,7 @@ const Footer: React.FC = () => {
           <h4 className="text-white font-bold mb-6">{t("الأدوات والاختبارات", "Tools & Tests")}</h4>
           <ul className="space-y-4">
             <li><Link to="/quiz/brain-rot" className="text-gray-400 hover:text-purple-400 transition-colors">{t("اختبار تعفن الدماغ", "Brain Rot Test")}</Link></li>
-            <li><Link to="/quiz/phone-addiction" className="text-gray-400 hover:text-purple-400 transition-colors">{t("إدمان الهاتف", "Phone Addiction")}</Link></li>
-            <li><Link to="/quiz/brain-age" className="text-gray-400 hover:text-purple-400 transition-colors">{t("عمر الدماغ", "Brain Age")}</Link></li>
-            <li><Link to="/quiz/attention-span" className="text-gray-400 hover:text-purple-400 transition-colors">{t("مدى الانتباه", "Attention Span")}</Link></li>
+
           </ul>
         </div>
 

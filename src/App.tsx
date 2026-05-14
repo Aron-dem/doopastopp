@@ -81,49 +81,52 @@ function AppContent() {
           <IntroScreen onComplete={handleIntroComplete} />
         ) : (
           <Routes>
-<Route path="/" element={<HeroSection onStartQuiz={() => navigate('/quiz/brain-rot')} />} />
-	            <Route path="/quiz" element={<Navigate to="/quiz/brain-rot" replace />} />
-            <Route path="/quiz/:testId" element={<QuizPage />} />
-            <Route path="/results" element={
-              quizResult ? (
-                <ResultsSection
-                  score={quizResult.score}
-                  answers={quizResult.answers}
-                  result={quizResult.result}
-                  brainRotPcnt={quizResult.brainRotPcnt}
-                  onRetake={() => navigate('/quiz/brain-rot')}
-                  onStartChallenge={() => navigate('/challenge')}
-                />
-              ) : (
-                <HeroSection onStartQuiz={() => navigate('/quiz/brain-rot')} />
-              )
-            } />
+<Route path="/" element={<HeroSection onStartQuiz={() => navigate('/quiz')} />} />
+	            <Route path="/quiz" element={
+	              <QuizSection
+	                onComplete={handleQuizComplete}
+	                onBack={() => navigate('/')}
+	              />
+	            } />
+	            <Route path="/results" element={
+	              quizResult ? (
+	                <ResultsSection
+	                  score={quizResult.score}
+	                  answers={quizResult.answers}
+	                  result={quizResult.result}
+	                  brainRotPcnt={quizResult.brainRotPcnt}
+	                  onRetake={() => navigate('/quiz')}
+	                  onStartChallenge={() => navigate('/challenge')}
+	                />
+	              ) : (
+	                <HeroSection onStartQuiz={() => navigate('/quiz')} />
+	              )
+	            } />
             <Route path="/challenge" element={
               <ChallengeSection
                 onBack={() => navigate(quizResult ? '/results' : '/')}
                 userScore={quizResult?.score}
               />
             } />
-            <Route path="/level" element={
-              <>
-                <LevelProgressScreen
-                  onStartTest={() => navigate('/quiz/brain-rot')}
-                  onStartPlan={() => navigate('/plan')}
-                  onBack={() => navigate('/')}
-                />
-                <AdBanner position="bottom" delay={3000} dismissible={true} />
-              </>
-            } />
-            <Route path="/plan" element={<RecoveryPlanPage />} />
-            <Route path="/daily-plan" element={
-              <>
-                <PlanDayScreen
-                  onComplete={() => navigate('/level')}
-                  onBack={() => navigate('/level')}
-                />
-                <AdBanner position="side" delay={5000} dismissible={true} />
-              </>
-            } />
+<Route path="/level" element={
+	              <>
+	                <LevelProgressScreen
+	                  onStartTest={() => navigate('/quiz')}
+	                  onStartPlan={() => navigate('/plan')}
+	                  onBack={() => navigate('/')}
+	                />
+	                <AdBanner position="bottom" delay={3000} dismissible={true} />
+	              </>
+	            } />
+<Route path="/plan" element={
+	              <>
+	                <PlanDayScreen
+	                  onComplete={() => navigate('/level')}
+	                  onBack={() => navigate('/level')}
+	                />
+	                <AdBanner position="side" delay={5000} dismissible={true} />
+	              </>
+	            } />
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             
